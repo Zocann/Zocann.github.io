@@ -21,22 +21,32 @@
 
     .header-circle {
         position: relative;
-        background-color: #EEEFE0;
+        background-color: #D2D0A0;
         opacity: 85%;
         width: 180px;
         height: 180px;
         border-radius: 90px;
         margin: 20px;
+        transition: background-color 0.3s;
+    }
+
+    .header-circle:hover {
+        background-color: #537D5D;
     }
 
     .header-circle-logo {
         position: relative;
-        background-color: #EEEFE0;
+        background-color: #D2D0A0;
         opacity: 85%;
         width: 180px;
         height: 180px;
         border-radius: 90px;
         margin: 20px;
+        transition: background-color 0.3s;
+    }
+
+    .header-circle-logo:hover {
+        background-color: #537D5D;
     }
 
     .header-img-contacts {
