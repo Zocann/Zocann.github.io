@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Karel Mareth">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/header/header-mobile.css">
+    <link rel="stylesheet" href="stylesheets/header/header-desktop.css">
+    <link rel="stylesheet" href="stylesheets/header/overlay-mobile.css">
+    <link rel="stylesheet" href="stylesheets/header/overlay-desktop.css">
+    <link rel="stylesheet" href="stylesheets/main-page/main-page-mobile.css">
+    <link rel="stylesheet" href="stylesheets/main-page/main-page-desktop.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <div class="header h">
+
+        <div class="header-logo h">
+            <div class="header-circle-logo">
+                <a href="#">
+                    <img src="images/logo.png" class="header-img-logo" alt="logo" />
+                </a>
+            </div>
+        </div>
+
+        <div class="header-options">
+            <div class="header-fill h"></div>
+
+            <div class="header-circle">
+                <a href="tel:+420777921245">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                        class="header-img-contacts"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path fill="#000000"
+                            d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="header-circle">
+                <a onclick="openNav()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512 "
+                        class="header-img-bars"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path fill="#050505"
+                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a href="#" onclick="closeNav()">DOMŮ</a>
+            <a href="#surrounding" onclick="closeNav()">OKOLÍ</a>
+            <a href="#surrounding2" onclick="closeNav()">KAM V OKOLÍ</a>
+            <a href="#facility" onclick="closeNav()">UBYTOVÁNÍ</a>
+            <a href="#facility2" onclick="closeNav()">VYBAVENÍ</a>
+            <a href="#pricing" onclick="closeNav()">CENÍK</a>
+            <a href="#contacts" onclick="closeNav()">KONTAKTY</a>
+        </div>
+    </div>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.height = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
+
+    <!-- Main body -->
+    <!-- Intro -->
+
+    <div class="main-content">
+
+        <div class="position-static div-main-text">
+            <p class="text main-intro-text1">Zažijte</p>
+            <p class="text2 main-intro-text5">HARMONII</p>
+            <p class="text main-intro-text2">Luxusu</p>
+            <p class="text2 main-intro-text3">A</p>
+            <p class="text main-intro-text4">Přírody</p>
+        </div>
+
+        <div class="position-static div-main-img">
+            <img src="photos/photo-main.jpg" class="img-main" alt="photo-main">
+        </div>
+
+        <!-- Surrounding -->
+
+        <div class="position-static div-text1" id="surrounding">
+            <p class="text text-11">Prozkoumejte</p>
+            <p class="text2 text-12">OKOLÍ</p>
+            <p class="text text-13">Beskyd</p>
+        </div>
+
+
+        <div class="photos-flex">
+            <div class="photo-container">
+                <img src="photos/photo-nature1.jpg" alt="photo-nature1" class="photo-nature">
+                <p class="text text-image-desc">Výhled na Horní Lomnou</p>
+            </div>
+
+            <div class="photo-container">
+                <img src="photos/photo-nature3.jpg" alt="photo-nature2" class="photo-nature">
+                <p class="text text-image-desc">Povodí říčky Lomná</p>
+            </div>
+        </div>
+
+        <!-- Surrounding info -->
+
+        <div class="info-container" id="surrounding2">
+            <div>
+                <p class="text-info-title">Zajímavá místa a trasy v okolí</p>
+            </div>
+
+            <div class="div-text-info">
+                <a class="text-info" href="https://www.jablunkov.cz/kam-na-kole/ds-1107">JABLUNKOVSKÉ CYKLOTRASY</a>
+            </div>
+            <div class="div-text-info">
+                <a class="text-info" href="https://www.navylet.cz/cs/turistika/jablunkov">JABLUNKOVSKÁ TURISTIKA</a>
+            </div>
+
+
+            <div>
+                <p class="text-info-title">Restaurace</p>
+            </div>
+            <div class="div-text-info">
+                <a class="text-info" href="https://g.co/kgs/LyQuLGG">RYBÁRNA STERN</a>
+            </div>
+            <div class="div-text-info">
+                <a class="text-info" href="https://pristavkostkov.cz">PŘÍSTAV KOSTKOV</a>
+            </div>
+            <div class="div-text-info">
+                <a class="text-info" href="https://www.hotelbullawa.cz">RESTAURACE BULAWA</a>
+            </div>
+        </div>
+
+
+        <!-- Facility -->
+
+        <div class="position-static div-text2" id="facility">
+            <p class="text text-21">Užijte</p>
+            <p class="text2 text-22">SI</p>
+            <p class="text text-23">Pohodlí</p>
+            <p class="text2 text-24">JAKO Z</p>
+            <p class="text text-25">Domova</p>
+        </div>
+
+
+        <div class="photos-flex">
+            <div class="photo-container" id="photo-room">
+                <img src="photos/photo-room.jpg" alt="photo-room" class="photo-nature">
+                <p class="text text-image-desc">Máme místo až pro 8 osob</p>
+            </div>
+
+            <div class="photo-container" id="photo-livingroom">
+                <img src="photos/photo-livingroom.jpg" alt="photo-livingroom" class="photo-nature">
+                <p class="text text-image-desc">Dejte spočinout nohám v prostorném obývacím pokoji</p>
+            </div>
+
+            <div class="photo-container" id="photo-kitchen">
+                <img src="photos/photo-kitchen.jpg" alt="photo-kitchen" class="photo-nature">
+                <p class="text text-image-desc">Uvařte chutné pokrmy</p>
+            </div>
+
+            <div class="photo-container" id="photo-bathroom">
+                <img src="photos/photo-bathroom.jpg" alt="photo-bathroom" class="photo-nature">
+                <p class="text text-image-desc">Opláchněte ze sebe všechen stres</p>
+            </div>
+
+            <div class="photo-container" id="photo-balcony">
+                <img src="photos/photo-balcony.jpg" alt="photo-balcony" class="photo-nature">
+                <p class="text text-image-desc">Užijte si výhled do přírody</p>
+            </div>
+        </div>
+
+        <!-- Facility info -->
+
+        <div class="info-container" id="facility2">
+            <div>
+                <p class="text-info-title">Naše ubytování disponuje</p>
+            </div>
+            <div class="div-text-info">
+                <a href="#photo-room" class="text-info">Třemi samostatnými pokoji až pro osm osob (včetně jednoho
+                    balkónu)</a>
+            </div>
+            <div class="div-text-info">
+                <a href="#photo-bathroom" class="text-info">Dvěma koupelnami a jedním samostatným WC</a>
+            </div>
+            <div class="div-text-info">
+                <a href="#photo-livingroom" class="text-info">Prostorným obývacím pokojem, průchozí kuchyní a
+                    jídelnou</a>
+            </div>
+            <div class="div-text-info">
+                <a class="text-info">Terasou s altánkem</a>
+            </div>
+
+            <div class="div-text-info">
+                <a class="text-info">Dvěma parkovacími místy</a>
+            </div>
+        </div>
+
+        <!-- Pricing off-season -->
+
+        <p class="text-info-title" id="pricing">Ceník ubytování</p>
+
+        <div class="info-container">
+            <div class="div-text-info">
+                <p class="text-info">CENA ZA 1 NOC PRO 2 LIDI ...</p>
+            </div>
+    
+            <div class="div-text-info">
+                <p class="text-info">KAŽDÝ DALŠÍ ČLOVĚK + ....</p>
+            </div>
+    
+            <div class="div-text-info">
+                <p class="text-info">MINIMÁLNÍ DÉLKA POBYTU JSOU 2 NOCI</p>
+            </div>
+        </div>
+
+        <!-- Pricing season -->
+
+        <div class="position-static div-text1" id="pricing">
+            <p class="text text-21">Ceník</p>
+            <p class="text2 text-22">SEZÓNA</p>
+            <p class="text text-23">Ubytování</p>
+        </div>
+
+        <div class="info-container">
+            <div class="div-text-info">
+                <p class="text-info">CENA ZA 1 NOC PRO 2 LIDI ...</p>
+            </div>
+    
+            <div class="div-text-info">
+                <p class="text-info">KAŽDÝ DALŠÍ ČLOVĚK + ....</p>
+            </div>
+    
+            <div class="div-text-info">
+                <p class="text-info">MINIMÁLNÍ DÉLKA POBYTU JSOU 2 NOCI</p>
+            </div>
+        </div>
+
+
+        <!-- Contacts -->
+
+        <div class="position-static div-text1" id="contacts">
+            <p class="text text-21">Kontaktuje</p>
+            <p class="text2 text-22">NÁS</p>
+            <p class="text text-23">Ještě dnes</p>
+        </div>
+
+        <div class="info-container">
+            <div class="div-text-info">
+                <a class="text-info" href="tel:+420777921245">ZAVOLEJTE NA ČÍSLO: +420 777 921 244</a>
+            </div>
+    
+            <div class="div-text-info">
+                <a class="text-info" href="whatsapp://send?abid=+420777921245&text=Dobrý den, prosím o více informací k vašemu ubytování.">NAPIŠTE NÁM NA WHATS-UP: ...</a>
+            </div>
+    
+            <div class="div-text-info">
+                <a class="text-info" href="mailto:someone@example.com">NAPIŠTE NÁM NA E-MAIL: ...</a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-container">
+                <div class="footer-content">Název ubytování</div>
+                <div class="footer-content">Adresa:</div>
+                <div class="footer-content">Čp.</div>
+                <div class="footer-content">Česká Republika</div>
+                <div class="footer-content">Tel. +420 777 921 245</div>
+                <div class="footer-content">Jolana Marethová</div>
+            </div>
+            <img class="footer-logo" src="images/logo.png" alt="logo">
+        </div>
+
+    </div>
+</body>
+
+</html>

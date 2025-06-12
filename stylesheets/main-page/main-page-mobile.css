@@ -1,0 +1,226 @@
+.text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: "Fleur De Leah", cursive;
+    font-style: normal;
+    font-weight: 350;
+    font-size: 150px;
+    z-index: 2;
+}
+
+.text2 {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    color: gray;
+    opacity: 50%;
+}
+
+.div-main-text {
+    width: 100%;
+    height: 200px;
+}
+
+.main-intro-text1 {
+    color: black;
+    font-size: 150px;
+}
+
+.main-intro-text2 {
+    color: black;
+    margin-top: 250px;
+}
+
+.main-intro-text3 {
+    margin-top: 320px;
+    font-size: 190px;
+}
+
+.main-intro-text4 {
+    margin-top: 450px;
+    color: #537D5D;
+}
+
+.main-intro-text5 {
+    margin-top: 130px;
+    font-size: 170px;
+}
+
+.div-main-img {
+    height: 1300px;
+    margin-top: 450px;
+}
+
+.img-main {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+    -webkit-mask-image: linear-gradient(transparent, black, transparent);
+    mask-image: linear-gradient(transparent, black, transparent);
+}
+
+.div-text1 {
+    width: 100%;
+    height: 500px;
+}
+
+.div-text2 {
+    width: 100%;
+    height: 700px;
+}
+
+.text-12 {
+    margin-top: 100px;
+    font-size: 200px;
+}
+
+.text-13 {
+    margin-top: 250px;
+    color: #537D5D;
+}
+
+
+.photos-flex {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.photo-container {
+    width: 100%;
+    height: 1000px;
+    margin-bottom: 250px;
+}
+
+.photo-nature {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-mask-image: linear-gradient(transparent, black, transparent);
+    mask-image: linear-gradient(transparent, black, transparent);
+}
+
+.text-image-desc {
+    font-size: 80px;
+    margin-top: -120px;
+}
+
+.text-22 {
+    margin-top: 100px;
+    font-size: 200px;
+}
+
+.text-23 {
+    margin-top: 250px;
+}
+
+.text-24 {
+    margin-top: 300px;
+    font-size: 200px;
+}
+
+.text-25 {
+    margin-top: 450px;
+}
+
+.info-container {
+    width: 100%;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-info-title {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-top: 20px;
+    text-align: center;
+    font-family: "Fleur De Leah", cursive;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 120px;
+    color: black;
+}
+
+.div-text-info {
+    position: relative;
+    border-bottom: 1px solid gray;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.div-text-info::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, gray, transparent);
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 0;
+}
+
+.div-text-info:hover::before {
+    opacity: 1;
+}
+
+.div-text-info:hover {
+    cursor: pointer;
+}
+
+.div-text-info .text-info {
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.div-text-info:hover .text-info {
+    color: black !important;
+}
+
+
+.text-info {
+    font-size: 50px;
+    color: gray !important;
+    opacity: 50%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    transition: color 2s;
+}
+
+
+.footer {
+    width: 100%;
+    height: 1500px;
+    background: linear-gradient(transparent, gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+    justify-content: flex-end;
+}
+
+.footer-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    color: white;
+    opacity: 70%;
+    text-align: center;
+}
+
+.footer-logo {
+    margin-bottom: 130px;
+    height: 30%;
+}

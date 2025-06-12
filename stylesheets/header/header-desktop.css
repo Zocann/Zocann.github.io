@@ -1,0 +1,25 @@
+@media screen and (min-width: 1000px) {
+    .header {
+        height: 220px;
+        top: 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+    }
+
+    .header-circle:hover {
+        cursor: pointer;
+    }
+
+    .header-circle-logo {
+        width: 150px;
+        height: 150px;
+        border-radius: 75px;
+    }
+
+}
